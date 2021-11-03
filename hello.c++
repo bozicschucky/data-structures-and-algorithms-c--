@@ -43,19 +43,19 @@ int main()
     cout << i3;
 
     // loops
-    int a[100];
-    int i = 0;
-    int sum = 0;
-    while (i < 100 && a[i] >= 0)
-    {
-        // sum = a[i++];
-        cout << i++ << '\n';
-        i++;
-        // cout << "sum is " << sum << '\n';
-    }
-    for (int i = 0; i < 100; i++)
-    {
-        /* code */
-        cout << i << "\n";
-    }
+    // int a[100];
+    // int i = 0;
+    // int sum = 0;
+    // while (i < 100 && a[i] >= 0)
+    // {
+    //     // sum = a[i++];
+    //     cout << i++ << '\n';
+    //     i++;
+    //     // cout << "sum is " << sum << '\n';
+    // }
+    // for (int i = 0; i < 100; i++)
+    // {
+    //     /* code */
+    //     cout << i << "\n";
+    // }
 }
