@@ -33,24 +33,21 @@ int withDrawCash(int balance, int cash)
 void handleMenuSelection(int option = 0, int balance = 0, int cashDeposit = 0, int withdrawCash = 0)
 {
 
-  if (option == 1)
+  switch (option)
   {
-    cout << "balance is " << showBalance(balance) << endl;
-  }
+  case 1:
+    cout << "Your balance is: " << showBalance(balance) << endl;
+    break;
+  case 2:
+    cout << "Your balance is: " << depositCash(balance, cashDeposit) << endl;
+    break;
 
-  if (option == 2)
-  {
-    cout << "Deposit of cash success your balance is " << depositCash(balance, cashDeposit) << endl;
-  }
+  case 3:
+    cout << "Your balance is: " << withDrawCash(balance, withdrawCash) << endl;
+    break;
+  case 4:
 
-  if (option == 3)
-  {
-    cout << "Withdraw of cash successful" << withDrawCash(balance, withdrawCash);
-  }
-
-  if (option == 4)
-  {
-    return;
+    break;
   }
 }
 
@@ -61,7 +58,7 @@ int main()
   int withdrawCash = 50;
   int menuInput;
   // atm functionality
-  //show menu
+  // show menu
   while (menuInput != 4)
   {
     showMenu();
